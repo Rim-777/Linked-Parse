@@ -12,7 +12,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
-# gem 'rails_12factor'
 gem 'doorkeeper'
 gem 'rest-client'
 gem 'nokogiri'
