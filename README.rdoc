@@ -1,33 +1,34 @@
-The application uses DBMS Postgresql
-run cp config/database.yml.example config/database.yml to configure
-For search in app used ThinkingSfinks
-For a background job (scoring) used Redis and Sideqik
-So if you want to try the application locally, you need to install Sphinx and Redis on you system
-commands to run app
-rails s - run the application on the local server in development mode
-redis-server   - run Redis
-sideqik        - run Sideqik background job framework
-rake ts:index  - index database for search
-rake ts:start  - run ThinkinhSphinx server for search
+The application uses DBMS Postgresql.
+Run cp config/database.yml.example config/database.yml to configure.
+For search in app used ThinkingSfinks.
+For a background job (scoring) used Redis and Sideqik.
+So if you want to try the application locally, you need to install Sphinx and Redis on you system.
+
+Commands to run app:
+rails s - run the application on the local server in development mode.
+redis-server   - run Redis.
+sideqik        - run Sideqik background job framework.
+rake ts:index  - index database for search.
+rake ts:start  - run ThinkinhSphinx server for search.
 
 Locally application is available on port 3000:
 http://localhost:3000
 
-GET "/api/v1/users" - all users
+GET "/api/v1/users" - all users.
 example:
 http://localhost:3000/api/v1/users.json
 
-POST "/api/v1/users" - (LinkedIn URL must be passed in the request body)
+POST "/api/v1/users" - (LinkedIn URL must be passed in the request body).
 example:
 http://localhost:3000/api/v1/users.json
 body: linked_url=https://www.linkedin.com/in/timo-moss-b48b8a112
 
-GET "/api/v1/search/search" - searching(parameters: category, query)
+GET "/api/v1/search/search" - searching(parameters: category, query).
 example:
 http://localhost:3000/api/v1/search/search.json?query=ruby&category=skill
-If the category isn't specified the search will be global
+If the category isn't specified the search will be global.
 
-Unit and integration testing performed with RSpec framework
+Unit and integration testing performed with RSpec framework.
 
 Code is self-documenting  in accordance with the generally
-accepted rules of the Ruby community
+accepted rules of the Ruby community.
