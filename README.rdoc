@@ -1,6 +1,6 @@
 The application uses DBMS Postgresql.
 Run cp config/database.yml.example config/database.yml to configure.
-For search in app used ThinkingSfinks.
+For search in app used ThinkingSphinx.
 For a background job (scoring) used Redis and Sideqik.
 So if you want to try the application locally, you need to install Sphinx and Redis in your system.
 
