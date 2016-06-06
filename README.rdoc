@@ -1,3 +1,5 @@
+This simple application gets the public pages from LinkedIn and create the user in the database
+including name, current position, current title, education and skills.
 The application uses DBMS Postgresql.
 Run cp config/database.yml.example config/database.yml to configure.
 For search in app used ThinkingSphinx.
