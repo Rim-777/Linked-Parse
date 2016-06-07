@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :users_experience do
   end
 end

@@ -1,7 +1,7 @@
 require 'sidekiq/web'
 Rails.application.routes.draw do
+  apipie
   mount Sidekiq::Web => '/sidekiq'
-  use_doorkeeper
 
   namespace :api do
     namespace :v1 do
@@ -9,9 +9,6 @@ Rails.application.routes.draw do
       resource :search, only: :search do
         get :search
       end
-      # resources :skills
     end
   end
-
-  root to: "doorkeeper/applications#index"
 end
